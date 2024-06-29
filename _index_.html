@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+         <li><a href="#">Главная</a></li>
+         <li><a href="#">О нас</a></li>
+         <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Заявка</h2>
+    <section>
+      <form id="labels">
+        <label for="FIO">ФИО</label>
+        <input type="text" id="FIO" required pattern="[А-Яа-я\s]+" title="Введите только буквы">
+
+        <label for="numbert">Номер</label>
+        <input type="tel" id="numbert" required>
+
+        <label for="email">Электронная почта</label>
+        <input type="email" id="email" required>
+
+        <label for="date">Дата начала</label>
+        <input type="date" id="date"min="2024-06-30" required>
+
+        <label for="number">Количество дней</label>
+        <input type="number" id="number" required min="1" title="Введите только натуральные цифры">
+
+        <button type="submit" id="but">Отправить</button>
+      </form>
+    </section>
+  </main>
+
+<footer>
+  <nav>
+    <ul>
+       <li><a href="#">Главная</a></li>
+       <li><a href="#">О нас</a></li>
+       <li><a href="#">Контакты</a></li>
+    </ul>
+  </nav>
+</footer>
+</body>
+<script src="script.js"></script>
+</html>
